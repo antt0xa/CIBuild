@@ -20,6 +20,8 @@ namespace CIBuild
 
             _driver.Navigate().GoToUrl("https:\\www.google.com");
 
+            ((ITakesScreenshot)_driver).GetScreenshot().SaveAsFile(@"D:\\TestResult\1.png");
+
             Assert.True(true);
         }
 
