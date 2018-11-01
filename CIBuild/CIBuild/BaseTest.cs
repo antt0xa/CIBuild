@@ -25,6 +25,42 @@ namespace CIBuild
             Assert.True(true);
         }
 
+        [Test]
+        public void SecondTest()
+        {
+            _driver = new ChromeDriver();
+
+            _driver.Navigate().GoToUrl("https:\\www.google.com");
+
+            ((ITakesScreenshot)_driver).GetScreenshot().SaveAsFile(@"D:\\TestResult\2.png");
+
+            Assert.True(true);
+        }
+
+        [Test]
+        public void ThirdTest()
+        {
+            _driver = new ChromeDriver();
+
+            _driver.Navigate().GoToUrl("https:\\www.google.com");
+
+            ((ITakesScreenshot)_driver).GetScreenshot().SaveAsFile(@"D:\\TestResult\2.png");
+
+            Assert.True(true);
+        }
+
+        [Test]
+        public void Fourth()
+        {
+            _driver = new ChromeDriver();
+
+            _driver.Navigate().GoToUrl("https:\\www.google.com");
+
+            ((ITakesScreenshot)_driver).GetScreenshot().SaveAsFile(@"D:\\TestResult\2.png");
+
+            Assert.True(true);
+        }
+
         [TearDown]
         public void tearDown()
         {
