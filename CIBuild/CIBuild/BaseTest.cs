@@ -1,4 +1,6 @@
-﻿using NUnit.Framework;
+﻿using Allure.Commons;
+using Allure.NUnit.Attributes;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
@@ -9,8 +11,12 @@ using System.Threading.Tasks;
 
 namespace CIBuild
 {
-    public class BaseTest
+    [AllureSuite("HomePage Tests")]
+    [AllureEpic("Epic story")]
+    public class BaseTest : AllureReport
     {
+        protected static string AllureConfigDir { get; } = @"C:\Program Files\Jenkins\workspace\OctoberLearn\allure-results";
+
         private IWebDriver _driver;
 
         [Test]
