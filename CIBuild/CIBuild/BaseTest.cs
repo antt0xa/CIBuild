@@ -19,6 +19,8 @@ namespace CIBuild
 
         private IWebDriver _driver;
 
+        [AllureIssue("https:\\jira.site.com\\WW-123")]
+        [AllureOwner("John Doe")]
         [Test]
         public void FirstTest()
         {
@@ -35,6 +37,8 @@ namespace CIBuild
         [AllureFeature("Registration")]
         public void SecondTest()
         {
+
+            
             _driver = new ChromeDriver();
 
             _driver.Navigate().GoToUrl("https:\\www.google.com");
