@@ -32,6 +32,7 @@ namespace CIBuild
         }
 
         [Test]
+        [AllureFeature("Registration")]
         public void SecondTest()
         {
             _driver = new ChromeDriver();
@@ -44,6 +45,7 @@ namespace CIBuild
         }
 
         [Test]
+        [AllureFeature("Registration")]
         public void ThirdTest()
         {
             _driver = new ChromeDriver();
